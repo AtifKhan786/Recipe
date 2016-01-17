@@ -1,0 +1,119 @@
+{
+    "name":"Biryani",
+    "itemType":"ReceipeDetail",
+    "metaData":{
+        "mealForPeople":4,
+        "region":"Indian"
+    },
+    "subItems":[
+                {
+                "name":"Gallery",
+                "itemType":"ImageGallery",
+                "subItems":[{
+                            "name":"Hot and Tasty Biryani",
+                            "itemType":"Image",
+                            "aspectRatio":1.3,
+                            "imgUrl":"http://www.biryanikadai.com/wp-content/uploads/2012/12/CHICKEN-OR-LAMB-BIRYANI1.jpg"
+                            }]
+                },
+                {
+                "name":"Will Require",
+                "itemType":"Collection",
+                "subItems":[{
+                            "name":"Kadhai",
+                            "itemType":"OtherItemRequired",
+                            "aspectRatio":1.3,
+                            "imgUrl":"http://stuff2india.in/wp-content/uploads/2013/02/Varun-Aura-Hard-Anodized-Deep-Kadhai-Without-Lid.png"
+                            },
+                            {
+                            "name":"Stove",
+                            "itemType":"OtherItemRequired",
+                            "aspectRatio":1.3,
+                            "imgUrl":"http://new.rememberus.co.za/wp-content/uploads/2015/06/stove-oven2.jpg"
+                            }]
+                },
+                {
+                "name":"Ingredients",
+                "itemType":"Collection",
+                "subItems":[
+                            {
+                            "name":"Chicken",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://fumbilo.com/wp-content/uploads/2013/06/05-whole-raw-chicken-lgn.jpg",
+                            "quantity-display":"(1 kg)"
+                            },
+                            {
+                            "name":"Rice",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://3.imimg.com/data3/DO/IG/MY-5361260/1121-sella-basmathi-raw-rice-500x500.jpeg",
+                            "quantity-display":"(4 cups or 1.5 kg)"
+                            },
+                            {
+                            "name":"Oil",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://recyclenation.com/resources/2014/2/cooking-oil-recycling.jpg",
+                            "quantity-display":"(3 tbsp)"
+                            },
+                            {
+                            "name":"Cinnamom Stick",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://i.livescience.com/images/i/000/056/711/i02/cinnamon-stick-powder-130909.jpg?1378760711",
+                            "quantity-display":"(1 inch stick)"
+                            },
+                            {
+                            "name":"Bay leaves",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://undergroundhealthreporter.com/wp/wp-content/uploads/2012/06/bay-leaf-uses-300x199.jpg",
+                            "quantity-display":"(2)"
+                            },
+                            {
+                            "name":"Cloves",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://i.ndtvimg.com/mt/cooks/2014-11/cloves.jpg",
+                            "quantity-display":"(5-6)"
+                            },
+                            {
+                            "name":"Cumin Seeds",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://www.shreenakodaexim.com/images/products/Particular/Cumin-Seeds.jpg",
+                            "quantity-display":"1 tbsp"
+                            },
+                            {
+                            "name":"Tomatoes chopped",
+                            "itemType":"ReceipeIngredient",
+                            "imgUrl":"http://www.awesomecuisine.com/content_images/1/chopped_tomatoes.jpg",
+                            "quantity-display":"1 tbsp"
+                            }
+                            
+                            ]
+                },
+                {
+                "name":"Method",
+                "itemType":"CollectionReceipeStep",
+                "subItems":[{"name":"Cut chicken in one inch pieces. Boil rice and set aside. Heat oil in a Wonderchef Granite Wok, add cinnamon, bay leaves, cloves, cumin seeds, green cardamoms and sauté for half a minute.",
+                            "subItemIndex":0,
+                            "itemType":"ReceipeStep"},
+                            {"name":"Add sliced onions and sauté. Add slit green chillies and chicken cubes and continue to sauté. Add turmeric powder and mix. Add tomatoes and salt and mix. Add ginger-garlic paste, red chilli powder and yogurt. Mix well.",
+                            "subItemIndex":1,
+                            "itemType":"ReceipeStep"},
+                            {"name":"Add half the fried brown onions. Add the boiled rice on top. Sprinkle garam masala powder, ginger strips, mint leaves and coriander leaves. Sprinkle milk, rose water and remaining browned onions.",
+                            "subItemIndex":2,
+                            "itemType":"ReceipeStep"},
+                            {"name":"Cover and cook on low heat for about ten minutes. Garnish with the egg slices and serve hot.",
+                            "subItemIndex":3,
+                            "itemType":"ReceipeStep"}]
+                }
+                ],
+    "time":1000,
+    "authors":"Sanjeev Kapoor",
+    "itemDescription":"Biryani is a mixed rice dish from the Indian Subcontinent. It is made with spices, rice and meat or vegetables.",
+    "ingredients":[{
+                   "name":"Chicken",
+                   "itemType":"Ingredients",
+                   "quantity":0.5,
+                   "quantiyUnit":"kg"
+                   }],
+    "videos":[{"name":"How to Make Chicken Biryani",
+              "videoLink":"http://www.youtube.com/watch=vx34sdsa",
+              "itemType":"YoutubeLink"}]
+}

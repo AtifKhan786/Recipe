@@ -1,0 +1,130 @@
+ [
+  {
+  "name":"TOP RECEIPIES"
+  ,"itemType":"CollectionFeaturedReceipes"
+  ,"subItems":[
+               {
+               "name":"Chicken Biryani"
+               ,"time":1000
+               ,"authors":"Sanjeev Kapoor"
+               ,"itemDescription":"Biryani is a mixed rice dish from the Indian Subcontinent. It is made with spices, rice and meat or vegetables."
+               ,"imgUrl":"http://www.biryanikadai.com/wp-content/uploads/2012/12/CHICKEN-OR-LAMB-BIRYANI1.jpg"
+               ,"aspectRatio":1.333
+               ,"itemType":"Recipe"
+               },
+               {
+               "name":"Shahi Paneer"
+               ,"time":60
+               ,"authors":"Sanjeev Kapoor"
+               ,"itemDescription":"Biryani is a mixed rice dish from the Indian Subcontinent. It is made with spices, rice and meat or vegetables."
+               ,"imgUrl":"http://indiacity.com.au/wp-content/uploads/2014/08/shahi-paneer-635x325.jpg"
+               ,"aspectRatio":1.935
+               ,"itemType":"Recipe"
+               },
+               {
+               "name":"Choley Bhature"
+               ,"time":1000
+               ,"authors":"Sanjeev Kapoor"
+               ,"itemDescription":"Biryani is a mixed rice dish from the Indian Subcontinent. It is made with spices, rice and meat or vegetables."
+               ,"imgUrl":"http://cdn.indiamarks.com/wp-content/uploads/Chhole-Bhature.jpg"
+               ,"aspectRatio":1.5
+               ,"itemType":"Recipe"
+               },{
+               "name":"Beef Burger"
+               ,"time":1000
+               ,"authors":"Sanjeev Kapoor"
+               ,"itemDescription":"Biryani is a mixed rice dish from the Indian Subcontinent. It is made with spices, rice and meat or vegetables."
+               ,"imgUrl":"http://www.alternet.org/files/story_images/burger.png"
+               ,"aspectRatio":1.5
+               ,"itemType":"Recipe"
+               }
+               ]
+  },
+  {
+  "name":"FEATURED CHANNELS"
+  ,"itemType":"CollectionFeaturedChannels"
+  ,"subItems":[
+               {
+               "name":"Sanjeev Kapoor"
+               ,"authors":"Sanjeev Kapoor"
+               ,"receipesCount":19
+               ,"itemDescription":"Sanjeev is an Indian chef and entrepreneur.Kapoor stars in the TV show Khana Khazana, which is the longest running show of its kind in Asia; it broadcasts in 120 countries and in 2010 had more than 500 million"
+               ,"itemType":"Channel"
+               }
+               ]
+  },
+  {
+  "name":"COURSES"
+  ,"itemType":"Categories"
+  ,"subItems":[
+               {
+               "name":"Appetizers and Snacks"
+               ,"itemType":"Category"
+               ,"imgUrl":"http://www.crosseandblackwell.com/Images/recipes/appetizers.jpg"
+               },{
+               "name":"Bread Receipies"
+               ,"itemType":"Category"
+               ,"imgUrl":"http://2.bp.blogspot.com/-HCThN37TF2U/T66JToDyTTI/AAAAAAAAKII/BgG2TPVnHOI/s1600/banana+bread+recipe+(4).jpg"
+               },{
+               "name":"Deserts"
+               ,"itemType":"Category"
+               ,"imgUrl":"http://www.nestle-family.com/recipes/shared/images/by-course-or-type-desserts-cakes-thumbnail.jpg"
+               },{
+               "name":"Drinks"
+               ,"itemType":"Category"
+               ,"imgUrl":"http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/skinny_sipping_slideshow/photolibrary_rm_photo_of_assorted_fruit_drinks.jpg"
+               },{
+               "name":"Main Dishes"
+               ,"itemType":"Category"
+               ,"imgUrl":"http://herintalk.com/wp-content/uploads/2014/05/cool_summer_drinks_wallpaper1.jpg"
+               },{
+               "name":"Salads"
+               ,"itemType":"Category"
+               },{
+               "name":"Side Dishes"
+               ,"itemType":"Category"
+               },{
+               "name":"Soup, Stew and Chili"
+               ,"itemType":"Category"
+               }
+               ]
+  },
+  {
+  "name":"MEALS"
+  ,"itemType":"Categories"
+  ,"subItems":[
+               {
+               "name":"Breakfast and Brunch"
+               ,"itemType":"Category"
+               },{
+               "name":"Lunch Receipes"
+               ,"itemType":"Category"
+               },{
+               "name":"Diner Recipies"
+               ,"itemType":"Category"
+               }
+               ]
+  },
+  {
+  "name":"OCCASSIONS AND COOKING"
+  ,"itemType":"Categories"
+  ,"subItems":[
+               {
+               "name":"BBQ & Grilling"
+               ,"itemType":"Category"
+               },{
+               "name":"Everyday Cooking"
+               ,"itemType":"Category"
+               },{
+               "name":"Health Receipies"
+               ,"itemType":"Category"
+               },{
+               "name":"Holiday Receipies"
+               ,"itemType":"Category"
+               },{
+               "name":"World Cuisine"
+               ,"itemType":"Category"
+               }
+               ]
+  }
+  ]

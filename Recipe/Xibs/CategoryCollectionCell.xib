@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TLU-Sj-SXG" customClass="CategoryCollectionCell" customModule="Recipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-62-fTk" customClass="PreferredWidthFixLabel" customModule="Recipe" customModuleProvider="target">
+                        <rect key="frame" x="64" y="10" width="242" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="kdF-5a-6AI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57v-Qn-6Hr">
+                        <rect key="frame" x="20" y="56" width="286" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d14-gp-y8k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="oJi-62-fTk" firstAttribute="leading" secondItem="TLU-Sj-SXG" secondAttribute="leading" constant="64" id="9N4-Vn-HDQ"/>
+                <constraint firstAttribute="bottom" secondItem="57v-Qn-6Hr" secondAttribute="bottom" id="BdY-Jk-6WB"/>
+                <constraint firstAttribute="trailing" secondItem="57v-Qn-6Hr" secondAttribute="trailing" constant="20" id="IKG-Pb-0jU"/>
+                <constraint firstItem="oJi-62-fTk" firstAttribute="top" secondItem="TLU-Sj-SXG" secondAttribute="top" constant="10" id="dUM-rw-2Lf"/>
+                <constraint firstItem="57v-Qn-6Hr" firstAttribute="leading" secondItem="TLU-Sj-SXG" secondAttribute="leading" constant="20" id="eIF-Kd-c3V"/>
+                <constraint firstAttribute="trailing" secondItem="oJi-62-fTk" secondAttribute="trailing" constant="20" id="hoB-5e-dXu"/>
+                <constraint firstAttribute="bottom" secondItem="oJi-62-fTk" secondAttribute="bottom" constant="10" id="vxE-Wz-e18"/>
+            </constraints>
+            <size key="customSize" width="326" height="57"/>
+            <connections>
+                <outlet property="label" destination="oJi-62-fTk" id="Ht8-kI-8Iy"/>
+                <outlet property="seperatorView" destination="57v-Qn-6Hr" id="L3w-14-mWu"/>
+            </connections>
+            <point key="canvasLocation" x="733" y="222.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

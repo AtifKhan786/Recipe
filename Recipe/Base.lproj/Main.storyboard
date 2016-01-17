@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2p3-dB-IRo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--Receipes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppHomeViewController" customModule="Recipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tvn-0e-G6T">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SDl-Kh-SoC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tvn-0e-G6T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ITB-ys-Qlu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tvn-0e-G6T" secondAttribute="bottom" id="W4W-lt-44F"/>
+                            <constraint firstAttribute="trailing" secondItem="Tvn-0e-G6T" secondAttribute="trailing" id="if7-jh-NYb"/>
+                            <constraint firstItem="Tvn-0e-G6T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y5v-sT-ycM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Receipes" id="HoV-nN-c4r"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Tvn-0e-G6T" id="beg-Rl-Jjj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472" y="575"/>
+        </scene>
+        <!--Receipe Page View Controller-->
+        <scene sceneID="hWu-RM-D56">
+            <objects>
+                <viewController storyboardIdentifier="ReceipePageViewController" id="F7F-4b-hkH" customClass="ReceipePageViewController" customModule="Recipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tGj-uL-oEc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ile-gt-erf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vm0-7g-xlV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LnX-Uc-MBW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Gu-N4-a5V">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LnX-Uc-MBW" firstAttribute="top" secondItem="Vm0-7g-xlV" secondAttribute="top" id="SHV-ee-yUY"/>
+                            <constraint firstItem="LnX-Uc-MBW" firstAttribute="top" secondItem="tGj-uL-oEc" secondAttribute="bottom" id="fgw-tw-VJ0"/>
+                            <constraint firstItem="ile-gt-erf" firstAttribute="top" secondItem="LnX-Uc-MBW" secondAttribute="bottom" id="h1b-dP-Edp"/>
+                            <constraint firstAttribute="trailing" secondItem="LnX-Uc-MBW" secondAttribute="trailing" id="wxF-03-3cs"/>
+                            <constraint firstItem="LnX-Uc-MBW" firstAttribute="leading" secondItem="Vm0-7g-xlV" secondAttribute="leading" id="zC2-vM-e24"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fgw-tw-VJ0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="C8W-mp-dre"/>
+                    <connections>
+                        <outlet property="collectionView" destination="LnX-Uc-MBW" id="qiW-e5-efV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viL-dR-YFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3960" y="575"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ml3-YS-ngW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsWhenVerticallyCompact="YES" id="2p3-dB-IRo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRr-i9-KT6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.35471621749999999" green="0.044881015509999997" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.42590288949999999" green="0.67450980390000004" blue="0.1339541735" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="47e-HV-vZT">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eWj-nX-Udx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMC-M4-f3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="575"/>
+        </scene>
+    </scenes>
+</document>
