@@ -8,74 +8,51 @@
 
 import UIKit
 
-class AppHomeViewController: BaseViewController, UIViewControllerTransitioningDelegate {
+class AppHomeViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
-    var collectionViewDelegate:CollectionViewDelegate?
-    var transitionImage:UIImage?
-    var transitionView:UIView?
-
-    var navDelegate = NavigationControllerDelegate()
-
+    let collectionNode:ASCollectionNode
+    let collectionDelegate:CollectionViewDelegate
+    let collectionLayout:UICollectionViewFlowLayout
     
-//    override func viewDidChangeSizeBeforeLayoutSubView(oldSize: CGSize, newSize: CGSize) {
-//        super.viewDidChangeSizeBeforeLayoutSubView(oldSize, newSize: newSize)
-//        
-//    }
-    
-    override func viewDidChangeSizeAfterLayoutSubView() {
-        super.viewDidChangeSizeAfterLayoutSubView()
-        if (!(self.isMovingToParentViewController() || self.isBeingPresented())){
-            
-            let firstVisibleCellIndexPath = collectionView.indexPathsForVisibleItems().first
-//            collectionView.collectionViewLayout.invalidateLayout()
-            collectionView.reloadData()
-            if firstVisibleCellIndexPath != nil {
-                collectionView.scrollToItemAtIndexPath(firstVisibleCellIndexPath! , atScrollPosition: UICollectionViewScrollPosition.Top, animated: true)
-            }
-        }
+    static func layout() -> UICollectionViewFlowLayout {
+        let margin = CGFloat(2 )
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = margin
+        layout.scrollDirection = UICollectionViewScrollDirection.Vertical
+        layout.sectionInset = UIEdgeInsetsMake(margin, 0, margin, 0)
+        return layout
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        let layout = AppHomeViewController.layout()
+        collectionLayout = layout
+        collectionNode = ASCollectionNode(collectionViewLayout: layout)
+
+        collectionDelegate = CollectionViewDelegate(collectionViewNode: collectionNode)
+        super.init(coder: aDecoder)
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        weak var weakSelf = self
-        navDelegate.setHelperValues { () -> () in
-            weakSelf?.navDelegate.senderView = weakSelf?.transitionView
-        }
-        navigationController?.delegate = navDelegate
-        collectionViewDelegate = CollectionViewDelegate(collectionView: collectionView, interactionDelegate: nil)
-        collectionView.dataSource = collectionViewDelegate
-        collectionView.delegate = collectionViewDelegate
+        collectionLayout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 100)
 
-        collectionViewDelegate?.setCollectionData(Item.simulatedRecipeHomeScreenItems())
+        collectionNode.backgroundColor = UIColor.blackColor();
+        self.view.backgroundColor = UIColor.blackColor()
+        collectionNode.view.registerSupplementaryNodeOfKind(UICollectionElementKindSectionHeader)
+        collectionNode.view.frame = self.view.bounds
+        self.view.addSubview(collectionNode.view)
         
-        collectionViewDelegate?.selection = { (sectionItem:Item, rowItem:Item, indexPath:NSIndexPath, collectionView:UICollectionView) -> Void in
-        
-            weakSelf?.transitionImage = rowItem.getCachedImage()
-            let cell = collectionView.cellForItemAtIndexPath(indexPath)
-            weakSelf?.transitionView = cell
-            let vc = weakSelf?.storyboard?.instantiateViewControllerWithIdentifier("ReceipePageViewController")
-            
-            if vc != nil {
-                weakSelf?.showViewController(vc!, sender: nil)
-            }
-        }
-       
-    }
-    
-    
-//    MARK: - Transition delegate
-    
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-    
-        return nil
-
-    }
-    
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-         return nil
+        collectionDelegate.data = Item.simulatedRecipeHomeScreenItems()
+//        collectionNode.reloadData()
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        collectionNode.view.frame = self.view.bounds
+        collectionLayout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 60)
 
+    }
     
 }

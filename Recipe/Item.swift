@@ -5,27 +5,7 @@
 //  Created by atif on 6/7/15.
 //  Copyright (c) 2015 Atif Khan. All rights reserved.
 //
-
 import UIKit
-
-enum ItemType{
-    case Invalid
-
-    case CollectionFeaturedReceipe
-    case CollectionFeaturedChannels
-    case CollectionReceipeStepCollection
-    case ImageGallery
-    case Receipe
-    case Channel
-    case Image
-    case ReceipeStep
-
-    case ReceipeIngredient
-    case RecipeCategories
-    case ReceipCategory
-    case Collection
-    case OtherItemRequired
-}
 
 class Item: ImageDownloader {
     
@@ -123,6 +103,7 @@ class Item: ImageDownloader {
         if imageURL != nil {
             url = NSURL(string: imageURL!)
         }
+        
         
         super.init(imageURL: url)
 

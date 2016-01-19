@@ -11,6 +11,12 @@ import UIKit
 class BaseViewController: UIViewController {
     var viewSize_:CGSize?
     var oldSize:CGSize?
+    
+
+    required init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+    }
 
     func viewDidChangeSizeBeforeLayoutSubView( oldSize:CGSize, newSize:CGSize){
     
@@ -44,16 +50,6 @@ class BaseViewController: UIViewController {
 
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
 }

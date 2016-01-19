@@ -18,15 +18,6 @@ class ReceipePageViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        receipeDetail = ReceipeItemDetail.simulatedReceipeDetail()
-        navigationItem.title = receipeDetail?.name
-        collectionViewDelegate = CollectionViewDelegate(collectionView: collectionView, interactionDelegate: nil)
-        collectionView.dataSource = collectionViewDelegate
-        collectionView.delegate = collectionViewDelegate
-        
-        collectionViewDelegate?.setCollectionData(receipeDetail?.subItems)
-        collectionView.backgroundColor = UIColor.whiteColor()
-        
     }
 
 }
